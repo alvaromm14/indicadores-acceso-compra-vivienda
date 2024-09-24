@@ -22,7 +22,7 @@
 />
 
 <text
-    x={xScale(hoveredDate) + 50 > innerWidth ? xScale(hoveredDate) - 16 : xScale(hoveredDate)}
+    x={xScale(hoveredDate) + 55 > innerWidth ? xScale(hoveredDate) - 16 : xScale(hoveredDate)}
     dx="8"
     y={yScale(getYValue(hoveredDate))}
     pointer-events="none"
@@ -30,7 +30,7 @@
     stroke="white"
     stroke-width="3"
     paint-order="stroke"
-    text-anchor={xScale(hoveredDate) + 50 > innerWidth ? "end" : "start"}
+    text-anchor={xScale(hoveredDate) + 55 > innerWidth ? "end" : "start"}
     dominant-baseline="middle"
     font-weight={valor === "Asequibilidad" ? "600" : "500"}
     font-size="12px"
@@ -41,7 +41,7 @@
     : Math.round(getYValue(hoveredDate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "%"}
     </tspan>
     <tspan class="fecha"
-        x={xScale(hoveredDate) + 50 > innerWidth ? xScale(hoveredDate) - 10 : xScale(hoveredDate) + 8} dy="1.1em">
+        x={xScale(hoveredDate) + 55 > innerWidth ? xScale(hoveredDate) - 10 : xScale(hoveredDate) + 8} dy="1.1em">
         ({new Date(hoveredDate).toLocaleString('default', { year: 'numeric' })})
     </tspan>
 </text>
