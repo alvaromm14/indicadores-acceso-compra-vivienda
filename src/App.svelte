@@ -152,7 +152,7 @@ h1 {
   }
 
 .chart-container {
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   max-width: 600px;
 }
 

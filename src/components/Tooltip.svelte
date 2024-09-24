@@ -15,8 +15,7 @@
     cx={xScale(hoveredDate)}
     cy={yScale(getYValue(hoveredDate))}
     r={valor === "Asequibilidad" ? "5" : "4"}
-    fill="steelblue"
-    fill-opacity={valor === "Asequibilidad" ? "1" : "0.7"}
+    fill={valor === "Asequibilidad" ? "steelblue" : "#7DA7CA"}
     stroke="white"
     pointer-events="none"
 />
