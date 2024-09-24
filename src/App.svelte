@@ -6,7 +6,7 @@
   import * as d3 from 'd3';
   
   const margin = { top: 15, right: 20, bottom: 30, left: 50 };
-  let width = 740;
+  let width = 600;
   let height = 175;
   $: innerWidth = width - margin.left - margin.right;
   let innerHeight = height - margin.top - margin.bottom;
@@ -153,13 +153,13 @@ h1 {
 
 .chart-container {
   padding: 10px;
-  max-width: 730px;
+  max-width: 600px;
 }
 
 /* Estilos para dispositivos con pantallas más grandes (ordenadores) */
 @media (min-width: 768px) {
   .chart-container {
-    max-width: 700px;
+    max-width: 600px;
   }
 }
 
