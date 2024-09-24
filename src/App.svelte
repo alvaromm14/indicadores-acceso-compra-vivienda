@@ -5,7 +5,7 @@
   import HoverEvents from "$components/HoverEvents.svelte";
   import * as d3 from 'd3';
   
-  const margin = { top: 15, right: 20, bottom: 30, left: 50 };
+  const margin = { top: 15, right: 10, bottom: 30, left: 50 };
   let width = 600;
   let height = 175;
   $: innerWidth = width - margin.left - margin.right;
@@ -152,7 +152,7 @@ h1 {
   }
 
 .chart-container {
-  padding: 10px 10px 10px 0;
+  padding: 10px 0 10px 10px;
   max-width: 600px;
 }
 
