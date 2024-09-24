@@ -5,7 +5,7 @@
   import HoverEvents from "$components/HoverEvents.svelte";
   import * as d3 from 'd3';
   
-  const margin = { top: 15, right: 5, bottom: 30, left: 40 };
+  const margin = { top: 15, right: 30, bottom: 30, left: 40 };
   let width = 600;
   let height = 175;
   $: innerWidth = width - margin.left - margin.right;
