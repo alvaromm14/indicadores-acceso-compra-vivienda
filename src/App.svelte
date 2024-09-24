@@ -58,9 +58,9 @@
 
 </script>
 
-<div class="main">
+<div class="main" bind:clientWidth={width}>
 <h1>Esfuerzo hipotecario</h1>
-<div class="chart-container" bind:clientWidth={width}>
+<div class="chart-container">
   <svg width={width} height={height}>
     <g class="inner-chart" transform="translate({margin.left}, {margin.top})">
       {#each [0,10,30,50,70] as tick, i}
@@ -85,7 +85,7 @@
 </div>
 
 <h1>Tipos de interés</h1>
-<div class="chart-container" bind:clientWidth={width}>
+<div class="chart-container">
   <svg width={width} height={height}>
     <g class="inner-chart" transform="translate({margin.left}, {margin.top})">
       {#each [0,4,8,12,16] as tick, i}
@@ -110,7 +110,7 @@
 </div>
 
 <h1>Precio/m2</h1>
-<div class="chart-container" bind:clientWidth={width}>
+<div class="chart-container">
   <svg width={width} height={height}>
     <g class="inner-chart" transform="translate({margin.left}, {margin.top})">
       {#each [0, 500, 1000, 1500, 2000] as tick, i}
@@ -151,9 +151,15 @@ h1 {
 
   }
 
+  .main {
+  padding: 10px 0 10px 10px;
+  max-width: 730px;
+}
+
+
 .chart-container {
   padding: 10px 0 10px 10px;
-  max-width: 600px;
+  max-width: 730px;
 }
 
 /* Estilos para dispositivos con pantallas más grandes (ordenadores) */
