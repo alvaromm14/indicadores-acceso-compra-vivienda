@@ -153,7 +153,7 @@ h1 {
 
 .chart-container {
   padding: 10px 10px 10px 10px;
-  max-width: 730px;
+  max-width: 100%;
 }
 
 /* Estilos para dispositivos con pantallas más grandes (ordenadores) */
