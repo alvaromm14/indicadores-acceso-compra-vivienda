@@ -12,6 +12,7 @@
     import { line } from "d3-shape";
 
     $: lineGenerator = line()
+        .curve(d3.curveBasis)
         .x((d) => xScale(d.Fecha))
         .y((d) => yScale(d[valor]));
 

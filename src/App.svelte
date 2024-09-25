@@ -5,7 +5,7 @@
   import HoverEvents from "$components/HoverEvents.svelte";
   import * as d3 from 'd3';
   
-  const margin = { top: 15, right: 30, bottom: 30, left: 40 };
+  const margin = { top: 15, right: 20, bottom: 30, left: 50 };
   let width = 600;
   let height = 175;
   $: innerWidth = width - margin.left - margin.right;
@@ -150,11 +150,6 @@ h1 {
     text-align: left;
 
   }
-
-.chart-container {
-  padding: 10px 10px 10px 10px;
-  max-width: 100%;
-}
 
 /* Estilos para dispositivos con pantallas más grandes (ordenadores) */
 @media (min-width: 768px) {
