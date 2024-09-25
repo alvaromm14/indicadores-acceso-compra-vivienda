@@ -5,9 +5,9 @@
   import HoverEvents from "$components/HoverEvents.svelte";
   import * as d3 from 'd3';
   
-  const margin = { top: 15, right: 20, bottom: 30, left: 50 };
+  const margin = { top: 15, right: 20, bottom: 40, left: 50 };
   let width = 600;
-  let height = 175;
+  let height = 200;
   $: innerWidth = width - margin.left - margin.right;
   let innerHeight = height - margin.top - margin.bottom;
 
@@ -139,13 +139,13 @@
 <style>
 
 .fuente {
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
 }
 
 h1 {
-    font-size: 14px;
-    margin-bottom: 3px;
+    font-size: 16px;
+    margin-bottom: 8px;
     font-weight: 600;
     text-align: left;
 
