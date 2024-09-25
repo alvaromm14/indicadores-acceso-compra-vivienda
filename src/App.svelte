@@ -61,7 +61,7 @@
 <div class="main" bind:clientWidth={width}>
 <h1>Esfuerzo hipotecario</h1>
 <div class="chart-container">
-  <svg width={width} height={height}>
+  <svg {width} {height}>
     <g class="inner-chart" transform="translate({margin.left}, {margin.top})">
       {#each [0,10,30,50,70] as tick, i}
        {#if i !== 0}
