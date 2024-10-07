@@ -415,8 +415,14 @@ export default [
   },
   {
     "Fecha": "dec-23",
-    "Asequibilidad": 37,
+    "Asequibilidad": 36.7,
     "Tipos": 4,
-    "Precio": 1820
+    "Precio": 1842
+  },
+  {
+    "Fecha": "jun-24",
+    "Asequibilidad": 35.4,
+    "Tipos": 3.6,
+    "Precio": 1896
   }
 ];
